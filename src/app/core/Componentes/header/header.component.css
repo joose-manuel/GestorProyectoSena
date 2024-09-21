@@ -1,0 +1,115 @@
+.contenedor-Nav{
+    background-color:rgba(42, 54, 59, 1)  ;
+    grid-template-columns: 60% 40%;
+        /* border: solid; */
+        display: grid;
+        border: 0%;
+        padding: 0%;
+    
+    }
+    
+    .Contenedor-Nav1{
+        
+        height: 58px;
+        width: 100%;
+        
+    }
+    
+    
+    .Logo{
+        width: 100px;
+        height: 70%;
+        /* border: solid; */
+    }
+    .Contenedor-2{
+        /* border: solid red  ; */
+        display: flex;
+        align-items: center;
+    }
+    .contenedor-botones{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        /* border: solid green; */
+        grid-template-columns: 19% 28% 2% 15% 2% 20%;
+        display: grid;
+    }
+    /* .contenedor-botones div{
+        
+    } */
+    
+    .contenedor1{
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 14px;
+        text-align: center;
+    }
+    
+    
+    
+    .Login{
+        color :rgba(42, 54, 59, 1) ;
+        text-decoration: none;
+        list-style-type: none;
+        font-weight: bold;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    
+    
+    .Login:hover {
+        color: rgba(28, 201, 35, 1);
+        text-decoration: none;
+        list-style-type: none;
+        font-weight: bold;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    
+    .contenedor2{
+        text-align: center; 
+        font-weight: bold;
+        
+    }
+    
+    .Contactanos{
+        color:rgba(255, 255, 255, 1);
+        text-decoration: none;
+        list-style-type: none;
+        font-weight: bold;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+    }
+    
+    .Contactanos:hover{
+        color: rgba(28, 201, 35, 1);
+        text-decoration: none;
+        list-style-type: none;
+        font-weight: bold;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+    }
+    
+    
+    .contenedor3{
+        height: 100%;
+        border-left: solid rgba(255, 255, 255, 1);
+        border-radius: 1px;
+    
+    }
+    
+    .contenedor4{
+    
+        text-align:le ;
+    
+    }
+    
+    
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    

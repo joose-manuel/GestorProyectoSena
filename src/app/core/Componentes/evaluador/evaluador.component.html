@@ -1,0 +1,108 @@
+
+<section class="conetnedor-principal" >
+    <div class="conatiner-principal" >
+        <div class="contenedor1">
+            <div class="cuador_adentro">
+                <app-menu-coordinador> </app-menu-coordinador> 
+            </div>
+        </div>
+        <div class="contenedor2">
+            <div class="contenedor-principal1">
+                <div class="Conetendor-Dentro">
+                    <div class="contenedor-header">
+                        <p class="nombreNat">Registro de Evaluador</p>
+                    </div>
+                    <div class="contenedor-contenido">
+                        <form action="" >
+                            <!-- // Aqi va el metodo para enviar los datos a la base datos   -->
+                            <div class="contendorformulario">
+                                <div>
+                                    <div class="texto-Entradas">
+                                        <p>Nombre:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Correo estudiantil:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Genero:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Edad:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Numero de Documento  :<br></p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Contraseña:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Numero de Ficha:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Estado:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Nombre De Formacion:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Area de Administracion:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Nivel de Acceso: </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div > <input type="text" class="leabe-nombre"> </div>
+                                    <div class="contendor-input"> <input type="text" class="leabe-nombre"></div>
+                                    <div class="contendor-input"> <select id="gender" name="gender" class="leabe-nombre">
+                                        <option value="male">Masculino</option>
+                                        <option value="female">Femenino</option>
+                                        <option value="other">Otro</option>
+                                        <option value="prefer_not_to_say">Prefiero no decirlo</option>
+                                      </select></div>
+                                    <div class="contendor-input"><input type="text" class="leabe-nombre"></div>
+                                    <div class="contendor-input"></div>
+                                    <div class="contendor-input"><input type="text" class="leabe-nombre"></div>
+                                    <div class="contendor-input"><input type="text" class="leabe-nombre"></div>
+                                    <br>
+                                    <div class="contendor-input"><input type="text" class="leabe-nombre"></div>
+
+                                    <div class="contendor-input"> </div>
+                                    <div><select id="gender" name="gender" class="leabe-nombre">
+                                        <option value="male">Soltero</option>
+                                        <option value="female">Casado</option>
+                                        <option value="prefer_not_to_say">Prefiero no decirlo</option>
+                                      </select></div>
+                                    <div class="contendor-input"> <input type="text" class="leabe-nombre"></div>
+                                    <div class="contendor-input"> <input type="text" class="leabe-nombre"></div>
+                                    <br>
+                                    <div><select id="gender" name="gender" class="leabe-nombre">
+                                        <option value="male">Otro</option>
+                                        <option value="female">Otro</option>
+                                        <option value="prefer_not_to_say">Prefiero no decirlo</option>
+                                      </select></div>
+                                </div>
+                                <div class="contendor-imagenes">
+                                    <div class="conetenedor-Foto">
+                                        <div class="cuador_adentro-logo">
+                                            <img src="assets/Frame (1).png" alt="" class="foto">
+                                            <input type="file" id="fileInput" name="fileInput" style="display: none;">
+                                            <button class="custom-file-button" onclick="document.getElementById('fileInput').click()"> <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M260-160q-91 0-155.5-63T40-377q0-78 47-139t123-78q25-92 100-149t170-57q117 0 198.5 81.5T760-520q69 8 114.5 59.5T920-340q0 75-52.5 127.5T740-160H520q-33 0-56.5-23.5T440-240v-206l-64 62-56-56 160-160 160 160-56 56-64-62v206h220q42 0 71-29t29-71q0-42-29-71t-71-29h-60v-80q0-83-58.5-141.5T480-720q-83 0-141.5 58.5T280-520h-20q-58 0-99 41t-41 99q0 58 41 99t99 41h100v80H260Zm220-280Z"/></svg></a>Adjunta foto</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /*Boton para enviar los datos del formulaio*/ -->
+                            <div class="boton">
+                                <button class="btn-enviar">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<router-outlet></router-outlet>
