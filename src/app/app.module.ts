@@ -7,7 +7,7 @@ import { HeaderComponent } from './core/Componentes/header/header.component';
 import { AdministradorComponent } from './core/Componentes/administrador/administrador.component';
 import { MenuCoordinadorComponent } from './core/Componentes/menu-coordinador/menu-coordinador.component';
 import { SustentacionesComponent } from './core/Componentes/sustentaciones/sustentaciones.component';
-import { LoginComponent } from './login/login.component';
+
 import { RegitroDeAprendizComponent } from './core/Componentes/regitro-de-aprendiz/regitro-de-aprendiz.component';
 import { LateralIzquierdoAprendizComponent } from './core/Componentes/lateral-izquierdo-aprendiz/lateral-izquierdo-aprendiz.component';
 import { InstructorComponent } from './core/Componentes/instructor/instructor.component';
@@ -16,6 +16,9 @@ import { CrearReportesComponent } from './core/Componentes/crear-reportes/crear-
 import { ModuloPrinciaplComponent } from './core/Modelos/modulo-princiapl/modulo-princiapl.component';
 import { CrieteriosEvaluativosComponent } from './core/Modelos/crieterios-evaluativos/crieterios-evaluativos.component';
 import { NavComponent } from './core/Componentes/nav/nav.component';
+import { BarraLateralDesplegableFlotanteComponent } from './core/Componentes/barra-lateral-desplegable-flotante/barra-lateral-desplegable-flotante.component';
+import { LoginComponent } from './core/Modelos/login/login.component';
+
 
 
 
@@ -38,7 +41,8 @@ import { NavComponent } from './core/Componentes/nav/nav.component';
     CrearReportesComponent,
     ModuloPrinciaplComponent,
     CrieteriosEvaluativosComponent,
-    NavComponent
+    NavComponent,
+    BarraLateralDesplegableFlotanteComponent
   ],
   imports: [
     BrowserModule,

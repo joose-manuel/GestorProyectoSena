@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
+
 import { AdministradorComponent } from './core/Componentes/administrador/administrador.component';
 import { SustentacionesComponent } from './core/Componentes/sustentaciones/sustentaciones.component';
 import { RegitroDeAprendizComponent } from './core/Componentes/regitro-de-aprendiz/regitro-de-aprendiz.component';
@@ -9,6 +9,7 @@ import { EvaluadorComponent } from './core/Componentes/evaluador/evaluador.compo
 import { CrearReportesComponent } from './core/Componentes/crear-reportes/crear-reportes.component';
 import { ModuloPrinciaplComponent } from './core/Modelos/modulo-princiapl/modulo-princiapl.component';
 import { CrieteriosEvaluativosComponent } from './core/Modelos/crieterios-evaluativos/crieterios-evaluativos.component';
+import { LoginComponent } from './core/Modelos/login/login.component';
 
 
 
