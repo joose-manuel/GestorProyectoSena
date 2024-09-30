@@ -7,7 +7,6 @@ import { HeaderComponent } from './core/Componentes/header/header.component';
 import { AdministradorComponent } from './core/Componentes/administrador/administrador.component';
 import { MenuCoordinadorComponent } from './core/Componentes/menu-coordinador/menu-coordinador.component';
 import { SustentacionesComponent } from './core/Componentes/sustentaciones/sustentaciones.component';
-
 import { RegitroDeAprendizComponent } from './core/Componentes/regitro-de-aprendiz/regitro-de-aprendiz.component';
 import { LateralIzquierdoAprendizComponent } from './core/Componentes/lateral-izquierdo-aprendiz/lateral-izquierdo-aprendiz.component';
 import { InstructorComponent } from './core/Componentes/instructor/instructor.component';
@@ -18,13 +17,8 @@ import { CrieteriosEvaluativosComponent } from './core/Modelos/crieterios-evalua
 import { NavComponent } from './core/Componentes/nav/nav.component';
 import { BarraLateralDesplegableFlotanteComponent } from './core/Componentes/barra-lateral-desplegable-flotante/barra-lateral-desplegable-flotante.component';
 import { LoginComponent } from './core/Modelos/login/login.component';
-
-
-
-
-
-
-
+import { AyudaComponent } from './core/Modelos/ayuda/ayuda.component';
+import { LoaderComponent } from './core/Utilidades/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -42,13 +36,15 @@ import { LoginComponent } from './core/Modelos/login/login.component';
     ModuloPrinciaplComponent,
     CrieteriosEvaluativosComponent,
     NavComponent,
-    BarraLateralDesplegableFlotanteComponent
+    BarraLateralDesplegableFlotanteComponent,
+    AyudaComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }

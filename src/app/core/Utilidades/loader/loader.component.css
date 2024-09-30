@@ -1,0 +1,103 @@
+/* loader.component.css */
+.loading-overlay {
+    position: fixed; /* Para que esté fija en la pantalla */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(42, 54, 59, 1); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el contenido */
+    z-index: 9999; /* Asegúrate de que esté en la parte superior */
+  }
+  
+  .loading-container {
+    text-align: center;
+    color: white; /* Color del texto */
+  }
+  
+  .spinner {
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-top: 8px solid #3498db; /* Color del spinner */
+    width: 60px; /* Tamaño del spinner */
+    height: 60px; /* Tamaño del spinner */
+    animation: spin 2s linear infinite; /* Animación */
+    margin-bottom: 10px; /* Espaciado entre el spinner y el texto */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+.contenedor-cargas{
+  display: grid;
+  width: 100%;
+  height: 100%;
+
+  grid-template-rows: 40% 20% auto;
+
+
+}
+.img1{
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.f1{
+  width: 478px;
+  height: 286px;
+  
+}
+
+.carga{
+  color: rgba(28, 201, 35, 1);
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.contenedor-cargador{
+  display: grid;
+  
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+
+}
+
+.r1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(28, 201, 34, 0.795);
+  border-radius: 50%;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1); /* Estado inicial y final: tamaño normal */
+  }
+  50% {
+    transform: scale(1.5); /* En el medio, crece al 150% de su tamaño */
+  }
+}
+
+/* Hacer que las animaciones empiecen en tiempos diferentes */
+.r1:nth-child(1) {
+  animation-delay: 0s;
+}
+.r1:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.r1:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.r1:nth-child(4) {
+  animation-delay: 0.9s;
+}

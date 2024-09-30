@@ -10,6 +10,7 @@ import { CrearReportesComponent } from './core/Componentes/crear-reportes/crear-
 import { ModuloPrinciaplComponent } from './core/Modelos/modulo-princiapl/modulo-princiapl.component';
 import { CrieteriosEvaluativosComponent } from './core/Modelos/crieterios-evaluativos/crieterios-evaluativos.component';
 import { LoginComponent } from './core/Modelos/login/login.component';
+import { AyudaComponent } from './core/Modelos/ayuda/ayuda.component';
 
 
 
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path:'instructor', component:InstructorComponent},
   {path:'evaluador', component:EvaluadorComponent},
   {path:'crear-reportes', component:CrearReportesComponent},
+  {path:'centroDeAyuda', component:AyudaComponent},
 
   {path:'',redirectTo:'/admin', pathMatch:"full"},
   {path:'**', redirectTo:'/admin'}

@@ -1,0 +1,21 @@
+<!-- loader.component.html -->
+<div *ngIf="isLoading" class="loading-overlay">
+    <div class="contenedor-cargas">
+        <div class="img1">
+            <img src="assets/kisspng-logo-brand-line-5af66c2d1dfee7 2 (2).png" alt="" class="f1">
+        </div>
+        <div class="img1">
+            <p class="carga">Cargando...</p>
+        </div>
+        <div class="img1">
+            <div class="contenedor-cargador">
+                <div class="r1"></div>
+                <div class="r1"></div>
+                <div class="r1"></div>
+                <div class="r1"></div>
+            </div>
+        </div>
+    </div>
+  <div *ngIf="!isLoading">
+</div>
+  

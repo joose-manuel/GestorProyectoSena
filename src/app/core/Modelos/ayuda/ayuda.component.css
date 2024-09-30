@@ -1,0 +1,91 @@
+/* Estilos para el Centro de Ayuda */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .search-bar {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .faq-section, .documentation-section, .contact-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .faq-section h2, .documentation-section h2, .contact-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h3 {
+    font-size: 18px;
+    color: #3498db;
+    cursor: pointer;
+  }
+  
+  .faq-item p {
+    font-size: 16px;
+    color: #555;
+    display: none;
+  }
+  
+  .faq-item h3:hover {
+    text-decoration: underline;
+  }
+  
+  .faq-item h3.active + p {
+    display: block;
+  }
+  
+  .documentation-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .documentation-section li {
+    margin-bottom: 10px;
+  }
+  
+  .documentation-section a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .contact-section a {
+    color: #3498db;
+    text-decoration: underline;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
