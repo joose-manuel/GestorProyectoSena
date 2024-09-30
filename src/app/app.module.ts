@@ -19,6 +19,9 @@ import { BarraLateralDesplegableFlotanteComponent } from './core/Componentes/bar
 import { LoginComponent } from './core/Modelos/login/login.component';
 import { AyudaComponent } from './core/Modelos/ayuda/ayuda.component';
 import { LoaderComponent } from './core/Utilidades/loader/loader.component';
+import { CentroAprendizComponent } from './core/Modelos/centro-aprendiz/centro-aprendiz.component';
+
+
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { LoaderComponent } from './core/Utilidades/loader/loader.component';
     NavComponent,
     BarraLateralDesplegableFlotanteComponent,
     AyudaComponent,
-    LoaderComponent
+    LoaderComponent,
+    CentroAprendizComponent,
+
   ],
   imports: [
     BrowserModule,
