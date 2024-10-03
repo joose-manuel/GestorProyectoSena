@@ -122,6 +122,69 @@
     height: 90%;
     border-radius: 20px;
     background-color: rgba(42, 54, 59, 1);
+    display: grid;
+    grid-template-rows: 10% auto;
+    /* border: solid white; */
+}
+.contenedor-circulos{
+   display: grid;
+   grid-template-rows: auto auto auto auto;
+
+
+}
+
+.circulo1{ 
+    background-color: rgba(42, 54, 59, 1);
+    width: 69px;
+    height: 58.7px;
+    border-radius: 55%;
+    border: solid rgba(0, 180, 75, 1) 2px;
+    color: white;
+
+}
+.circulo2{ 
+    background-color: rgba(42, 54, 59, 1);
+    width: 69px;
+    height: 58.7px;
+    border-radius: 55%;
+    border: solid rgba(0, 180, 75, 1) 2px;
+    color: white;
+    font-size: 12px;
+
+}
+.circulo3{ 
+    background-color: rgba(42, 54, 59, 1);
+    width: 69px;
+    height: 58.7px;
+    border-radius: 55%;
+    border: solid rgba(0, 180, 75, 1) 2px;
+    color: white;
+    font-size: 12px;
+
+}
+
+.circulo4{ 
+    background-color: rgba(42, 54, 59, 1);
+    width: 69px;
+    height: 58.7px;
+    border-radius: 55%;
+    border: solid rgba(0, 180, 75, 1) 2px;
+    color: white;
+    font-size: 12px;
+
+}
+.contenedor-nivel{
+    color: white;
+    background-color: rgba(61, 70, 74, 1);
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+
+
+
+.ff{
+    display: flex;
+    justify-content: center;
 
 }
 .card3{
@@ -208,4 +271,34 @@
     border-radius: 10px;
     background-color: rgba(42, 54, 59, 1);
     border: solid 1px white;
+}
+.f2{
+    text-align: center;
+    color: white;
+
+}
+.jj1{
+    display: flex;
+    justify-content: center;
+    
+}
+.hhh{
+    /* background-color: aliceblue; */
+    width: 80%;
+
+}
+.textos{
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+
+
+}
+
+.cuadrito1{ 
+    background-color: rgba(255, 255, 255, 0.18);
+    width: 100%;   
+    color: white;
+    font-size: 12px;
+
 }
