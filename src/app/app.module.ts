@@ -25,6 +25,7 @@ import { ListarAptendizAdministradorComponent } from './core/Modelos/listar-apte
 import { ListarInstructorAdministradorComponent } from './core/Modelos/listar-instructor-administrador/listar-instructor-administrador.component';
 import { ListarEvaluadorAdministradorComponent } from './core/Modelos/listar-evaluador-administrador/listar-evaluador-administrador.component';
 import { ListarAdministradorAComponent } from './core/Modelos/listar-administrador-a/listar-administrador-a.component';
+import { ProyectosFormativosInstructorComponent } from './proyectos-formativos-instructor/proyectos-formativos-instructor.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { ListarAdministradorAComponent } from './core/Modelos/listar-administrad
     ListarInstructorAdministradorComponent,
     ListarEvaluadorAdministradorComponent,
     ListarAdministradorAComponent,
+    ProyectosFormativosInstructorComponent,
     
 
   ],
