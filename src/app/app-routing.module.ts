@@ -13,6 +13,7 @@ import { LoginComponent } from './core/Modelos/login/login.component';
 import { AyudaComponent } from './core/Modelos/ayuda/ayuda.component';
 import { CentroAprendizComponent } from './core/Modelos/centro-aprendiz/centro-aprendiz.component';
 import { ListarAptendizAdministradorComponent } from './core/Modelos/listar-aptendiz-administrador/listar-aptendiz-administrador.component';
+import { ProyectosFormativosInstructorComponent } from './core/Modelos/proyectos-formativos-instructor/proyectos-formativos-instructor.component';
 
 
 
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path:'centroDeAyuda', component:AyudaComponent},
   {path:'centro-ayuda-aprendiz', component:CentroAprendizComponent},
   {path:'mostrar-aprendiz', component:ListarAptendizAdministradorComponent},
+  {path:'proyecto-formativo-instructor',component:ProyectosFormativosInstructorComponent},
 
   {path:'',redirectTo:'/admin', pathMatch:"full"},
   {path:'**', redirectTo:'/admin'}
