@@ -1,3 +1,8 @@
+
+¡Importante Pasos !
+*1. npm install*
+
+
 # ProyectoInnovac
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14. jose
