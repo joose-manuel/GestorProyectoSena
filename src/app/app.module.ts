@@ -22,6 +22,9 @@ import { LoaderComponent } from './core/Utilidades/loader/loader.component';
 import { CentroAprendizComponent } from './core/Modelos/centro-aprendiz/centro-aprendiz.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListarAptendizAdministradorComponent } from './core/Modelos/listar-aptendiz-administrador/listar-aptendiz-administrador.component';
+import { ListarInstructorAdministradorComponent } from './core/Modelos/listar-instructor-administrador/listar-instructor-administrador.component';
+import { ListarEvaluadorAdministradorComponent } from './core/Modelos/listar-evaluador-administrador/listar-evaluador-administrador.component';
+import { ListarAdministradorAComponent } from './core/Modelos/listar-administrador-a/listar-administrador-a.component';
 
 
 @NgModule({
@@ -45,6 +48,9 @@ import { ListarAptendizAdministradorComponent } from './core/Modelos/listar-apte
     LoaderComponent,
     CentroAprendizComponent,
     ListarAptendizAdministradorComponent,
+    ListarInstructorAdministradorComponent,
+    ListarEvaluadorAdministradorComponent,
+    ListarAdministradorAComponent,
     
 
   ],
