@@ -12,6 +12,7 @@ import { CrieteriosEvaluativosComponent } from './core/Modelos/crieterios-evalua
 import { LoginComponent } from './core/Modelos/login/login.component';
 import { AyudaComponent } from './core/Modelos/ayuda/ayuda.component';
 import { CentroAprendizComponent } from './core/Modelos/centro-aprendiz/centro-aprendiz.component';
+import { ListarAptendizAdministradorComponent } from './core/Modelos/listar-aptendiz-administrador/listar-aptendiz-administrador.component';
 
 
 
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path:'crear-reportes', component:CrearReportesComponent},
   {path:'centroDeAyuda', component:AyudaComponent},
   {path:'centro-ayuda-aprendiz', component:CentroAprendizComponent},
+  {path:'mostrar-aprendiz', component:ListarAptendizAdministradorComponent},
 
   {path:'',redirectTo:'/admin', pathMatch:"full"},
   {path:'**', redirectTo:'/admin'}

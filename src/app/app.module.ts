@@ -20,7 +20,8 @@ import { LoginComponent } from './core/Modelos/login/login.component';
 import { AyudaComponent } from './core/Modelos/ayuda/ayuda.component';
 import { LoaderComponent } from './core/Utilidades/loader/loader.component';
 import { CentroAprendizComponent } from './core/Modelos/centro-aprendiz/centro-aprendiz.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ListarAptendizAdministradorComponent } from './core/Modelos/listar-aptendiz-administrador/listar-aptendiz-administrador.component';
 
 
 @NgModule({
@@ -43,11 +44,15 @@ import { CentroAprendizComponent } from './core/Modelos/centro-aprendiz/centro-a
     AyudaComponent,
     LoaderComponent,
     CentroAprendizComponent,
+    ListarAptendizAdministradorComponent,
+    
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent] 

@@ -1,0 +1,47 @@
+<section class="conetnedor-principal" >
+    <div class="conatiner-principal" >
+        <div class="contenedor1">
+            <div class="cuador_adentro">
+                <app-menu-coordinador> </app-menu-coordinador> 
+            </div>
+        </div>
+        <div class="contenedor2">
+            <div class="contenedor-principal1">
+                <div class="Conetendor-Dentro">
+                    <div class="contenedor-header">
+                        <p class="nombreNat">Registro de Aprendiz</p>
+                    </div>
+                    <div class="contenedor-contenido">
+                        <table class="table " >
+                            <thead>
+                              <tr class="table-secondary">
+                                <th scope="col ">ID </th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Numero de documento</th>
+                                <th scope="col">Contraseña</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Numero Ficha</th>
+                                <th scope="col">Nombre de Ficha</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let aprendi of aprendiz">
+                                <th scope="row">{{aprendi.idAprendiz}}</th>
+                                <td>{{aprendi.nombre}}</td>
+                                <td>{{aprendi.correo}}</td>
+                                <td>{{aprendi.numeroDocuemnto}}</td>
+                                <td>{{aprendi.contrasena}}</td>
+                                <td>{{aprendi.estado}}</td>
+                                <td>{{aprendi.numeroFicha}}</td>
+                                <td>{{aprendi.nombreFicha}}</td>
+                            </tbody>
+                          </table>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
