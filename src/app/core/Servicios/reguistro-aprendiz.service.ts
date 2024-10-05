@@ -7,20 +7,22 @@ import { RegistroAprendiz } from '../Guards/aprendiz';
 })
 export class ReguistroAprendizService {
 
-
-  
-  private urlbase="http://localhost:8080/api-aprendiz/aprendiz";  
+  private urlBase="http://localhost:8080/api-aprendiz/aprendiz";  
     
-   
   constructor( private clienteHttp:HttpClient ) { }
   
   obtenerAprendiz():Observable<RegistroAprendiz[]>{
-    return this.clienteHttp.get<RegistroAprendiz[]>(this.urlbase);
+    return this.clienteHttp.get<RegistroAprendiz[]>(this.urlBase);
   }
-
 
   agregarAprendiz(aprendiz: RegistroAprendiz): Observable<Object> {
-    return this.clienteHttp.post(this.urlbase, aprendiz);
+    return this.clienteHttp.post(this.urlBase, aprendiz);
   }
 
+  eliminarAprendiz(id: number): Observable<Object> {
+    return this.clienteHttp.delete(`${this.urlBase}/${id}`);
+  }
+  obtenerAprendizPorId(id:number){
+    return this.clienteHttp.get<RegistroAprendiz>(`${this.urlBase}/${id}`);
+  }
 }
