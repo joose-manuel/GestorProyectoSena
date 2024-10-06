@@ -26,6 +26,10 @@ import { ListarInstructorAdministradorComponent } from './core/Modelos/listar-in
 import { ListarEvaluadorAdministradorComponent } from './core/Modelos/listar-evaluador-administrador/listar-evaluador-administrador.component';
 import { ListarAdministradorAComponent } from './core/Modelos/listar-administrador-a/listar-administrador-a.component';
 import { ProyectosFormativosInstructorComponent } from './core/Modelos/proyectos-formativos-instructor/proyectos-formativos-instructor.component';
+import { ProyectosSustentarEvaluadorComponent } from './core/Modelos/proyectos-sustentar-evaluador/proyectos-sustentar-evaluador.component';
+import { CalificarSustentacionesInstructorComponent } from './core/Modelos/calificar-sustentaciones-instructor/calificar-sustentaciones-instructor.component';
+import { PdfEvaluadorComponent } from './core/Modelos/pdf-evaluador/pdf-evaluador.component';
+import { InformacionProyectoAprendizComponent } from './core/Modelos/informacion-proyecto-aprendiz/informacion-proyecto-aprendiz.component';
 
 
 @NgModule({
@@ -53,6 +57,10 @@ import { ProyectosFormativosInstructorComponent } from './core/Modelos/proyectos
     ListarEvaluadorAdministradorComponent,
     ListarAdministradorAComponent,
     ProyectosFormativosInstructorComponent,
+    ProyectosSustentarEvaluadorComponent,
+    CalificarSustentacionesInstructorComponent,
+    PdfEvaluadorComponent,
+    InformacionProyectoAprendizComponent,
     
 
   ],

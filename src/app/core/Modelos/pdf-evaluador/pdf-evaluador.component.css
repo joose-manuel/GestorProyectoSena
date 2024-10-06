@@ -1,0 +1,36 @@
+.contenedor1{
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    margin-top: 10px;
+}
+.contenedor2{
+    background-color: #2B363B;
+}
+.contenedor3{
+    display: grid;
+    grid-template-rows: 4% auto;
+    margin: 30px;
+}
+.estilo{
+    background-color: #D9D9D9;
+    height: 500px;
+}
+.contenedor4{
+    display: grid;
+    grid-template-columns: 4% 2% 4% 5% 4% auto 5%;
+    text-align: center;
+}
+.cuadro{
+    background-color: black;
+    margin: 10px;
+   color: white;
+}
+.cuadro2{
+    margin: 10px;
+   color: white;
+}
+.cuadro3{
+    margin: 10px;
+   color: white;
+   border-left: solid white;
+}
