@@ -1,5 +1,5 @@
 .bg {
-    animation: slide 3s ease-in-out infinite alternate;
+    animation: slide 1s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
     bottom: 0;
     left: -50%;
@@ -11,10 +11,10 @@
 }
 .bg2 {
     animation-direction: alternate-reverse;
-    animation-duration: 4s;
+    animation-duration: 10s;
 }
 .bg3 {
-    animation-duration: 5s;
+    animation-duration: 70s;
 }
 @keyframes slide {
     0% {
@@ -24,6 +24,10 @@
         transform: translateX(25%);
     }
 }
+
+
+
+
 
 
 .panel-principal{
@@ -48,7 +52,7 @@
 
     /* border: solid wheat; */
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 59% 50%;
 
 }
 
@@ -236,7 +240,10 @@
 
 }
 .datos1{
-    /* text-align: center; */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
 
 
 }
@@ -245,20 +252,92 @@
     background-color: rgba(42, 54, 59, 1);
     width: 100%;
     height: 90%;
+    display: grid;
+    grid-template-rows: 19% auto;
 }
+
+.carta-1-1-2{
+    border-radius: 20px;
+    background-color: rgba(42, 54, 59, 1);
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 15% auto ;
+}
+
+.cuado-l1{
+
+    background-color: rgba(255, 255, 255, 0.18);
+    width: 99%;
+    height: 23px;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+
+
+.adad{
+    display: flex   ;
+    justify-content: center;
+
+}
+.hhh{
+
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+}   
+
+
+
+
 .contenedores-card3-f{
   
     display: flex;
     justify-content: center;
     /* border: solid whitesmoke; */
+   
+}
+
+.cuador-conentenedor{
+
+    width: 90%;
+    height: 90%;
+    background-color:rgba(255, 255, 255, 0.18);
+    border-radius:20px ;
+}
+
+
+.titulo-proyecto{
+    color: white;
+    text-align: center;
+}
+
+.titulo-proyecto1{
+    color: white;
     
 }
+
+
+.contendor-centro{
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+
 
 .contenedores-card3{
 
     display: grid;
     grid-template-rows: 10% auto;  
-    width: 100%;
+    width: 90%;
     height: 100%;
 
     /* border: solid red; */
@@ -272,6 +351,32 @@
     background-color: rgba(42, 54, 59, 1);
     border: solid 1px white;
 }
+.contenedor-centro1{
+
+    display: flex;
+    justify-content: center;
+}
+.txt{
+color: white;
+
+}
+
+
+.conentendor-fichas{
+    display: grid;
+    grid-template-rows:  50% auto auto auto auto;
+
+
+}
+
+.imagen-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 .f2{
     text-align: center;
     color: white;
@@ -301,3 +406,5 @@
     font-size: 12px;
 
 }
+
+

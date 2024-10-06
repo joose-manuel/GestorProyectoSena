@@ -30,6 +30,9 @@ import { ProyectosSustentarEvaluadorComponent } from './core/Modelos/proyectos-s
 import { CalificarSustentacionesInstructorComponent } from './core/Modelos/calificar-sustentaciones-instructor/calificar-sustentaciones-instructor.component';
 import { PdfEvaluadorComponent } from './core/Modelos/pdf-evaluador/pdf-evaluador.component';
 import { InformacionProyectoAprendizComponent } from './core/Modelos/informacion-proyecto-aprendiz/informacion-proyecto-aprendiz.component';
+import { CentroInstructorComponent } from './core/Modelos/centro-instructor/centro-instructor.component';
+import { CentroEvaluadorComponent } from './core/Modelos/centro-evaluador/centro-evaluador.component';
+
 
 
 @NgModule({
@@ -61,6 +64,8 @@ import { InformacionProyectoAprendizComponent } from './core/Modelos/informacion
     CalificarSustentacionesInstructorComponent,
     PdfEvaluadorComponent,
     InformacionProyectoAprendizComponent,
+    CentroInstructorComponent,
+    CentroEvaluadorComponent,
     
 
   ],

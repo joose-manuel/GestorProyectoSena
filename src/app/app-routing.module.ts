@@ -32,7 +32,7 @@ const routes: Routes = [
   {path:'centro-ayuda-aprendiz', component:CentroAprendizComponent},
   {path:'mostrar-aprendiz', component:ListarAptendizAdministradorComponent},
   {path:'proyecto-formativo-instructor',component:ProyectosFormativosInstructorComponent},
-
+  
   {path:'',redirectTo:'/admin', pathMatch:"full"},
   {path:'**', redirectTo:'/admin'}
  
