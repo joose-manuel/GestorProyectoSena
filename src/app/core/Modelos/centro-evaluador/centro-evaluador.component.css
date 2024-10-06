@@ -1,0 +1,410 @@
+.bg {
+    animation: slide 1s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 10s;
+}
+.bg3 {
+    animation-duration: 70s;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+
+
+
+
+
+.panel-principal{
+
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    /* border: solid; */
+    width: 100%;
+    min-height: 700px;
+    /* height: 815px; */
+
+
+}
+
+.panel-principal div{
+    /* border: solid; */
+
+
+}
+
+.contendor-set{
+
+    /* border: solid wheat; */
+    display: grid;
+    grid-template-rows: 59% 50%;
+
+}
+
+
+.contenedores-car1{
+    display: grid;
+    grid-template-columns: 30% 20% 10% 20% 20% ;
+
+
+}
+
+
+.btn-center{
+    display: flex;
+    justify-content: center;
+
+
+}
+.btn1{
+    border-radius: 20px;
+    width: 161px;
+    height: 36px;
+    background-color: rgba(0, 180, 75, 1);
+    color: white;
+    border: solid 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+
+}
+
+.cont1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.card1{
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: rgba(42, 54, 59, 1);
+    display: grid;
+    grid-template-rows: 10% auto auto;
+
+
+
+}
+.titulo123{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.titulo1231{
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+
+.card2{
+    width: 70%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: rgba(42, 54, 59, 1);
+    display: grid;
+    grid-template-rows: 10% auto;
+    /* border: solid white; */
+}
+.contenedor-circulos{
+   display: grid;
+   grid-template-rows: auto auto auto auto;
+
+
+}
+
+.circulo1{ 
+    background-color: rgba(42, 54, 59, 1);
+    width: 69px;
+    height: 58.7px;
+    border-radius: 55%;
+    border: solid rgba(0, 180, 75, 1) 2px;
+    color: white;
+
+}
+.circulo2{ 
+    background-color: rgba(42, 54, 59, 1);
+    width: 69px;
+    height: 58.7px;
+    border-radius: 55%;
+    border: solid rgba(0, 180, 75, 1) 2px;
+    color: white;
+    font-size: 12px;
+
+}
+.circulo3{ 
+    background-color: rgba(42, 54, 59, 1);
+    width: 69px;
+    height: 58.7px;
+    border-radius: 55%;
+    border: solid rgba(0, 180, 75, 1) 2px;
+    color: white;
+    font-size: 12px;
+
+}
+
+.circulo4{ 
+    background-color: rgba(42, 54, 59, 1);
+    width: 69px;
+    height: 58.7px;
+    border-radius: 55%;
+    border: solid rgba(0, 180, 75, 1) 2px;
+    color: white;
+    font-size: 12px;
+
+}
+.contenedor-nivel{
+    color: white;
+    background-color: rgba(61, 70, 74, 1);
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+
+
+
+.ff{
+    display: flex;
+    justify-content: center;
+
+}
+.card3{
+    width: 95%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: rgba(42, 54, 59, 1);
+
+}
+.card4{
+    width: 95%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: rgba(42, 54, 59, 1);
+
+}
+
+.contenedores-car2{
+    display: grid;
+    grid-template-columns: 55% 50%;
+   
+
+}
+
+
+.conte-card1{
+
+    display: grid;
+    grid-template-rows: 10% auto auto;
+
+    
+}
+
+.conte-card1 div {
+
+    /* border: solid; */
+}
+.contenedor-texto{
+    display: flex;
+    justify-content: center;
+    align-items:center ;  
+}
+.contenido-car-1{
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+
+}
+.datos1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+
+}
+.carta-1-1{
+    border-radius: 20px;
+    background-color: rgba(42, 54, 59, 1);
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 19% auto;
+}
+
+.carta-1-1-2{
+    border-radius: 20px;
+    background-color: rgba(42, 54, 59, 1);
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 15% auto ;
+}
+
+.cuado-l1{
+
+    background-color: rgba(255, 255, 255, 0.18);
+    width: 99%;
+    height: 23px;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+
+
+.adad{
+    display: flex   ;
+    justify-content: center;
+
+}
+.hhh{
+
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+}   
+
+
+
+
+.contenedores-card3-f{
+  
+    display: flex;
+    justify-content: center;
+    /* border: solid whitesmoke; */
+   
+}
+
+.cuador-conentenedor{
+
+    width: 90%;
+    height: 90%;
+    background-color:rgba(255, 255, 255, 0.18);
+    border-radius:20px ;
+}
+
+
+.titulo-proyecto{
+    color: white;
+    text-align: center;
+}
+
+.titulo-proyecto1{
+    color: white;
+    
+}
+
+
+.contendor-centro{
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+
+
+.contenedores-card3{
+
+    display: grid;
+    grid-template-rows: 10% auto;  
+    width: 90%;
+    height: 100%;
+
+    /* border: solid red; */
+
+}
+.carta11{
+    width: 40%;
+    height: 90%;
+    border: solid;
+    border-radius: 10px;
+    background-color: rgba(42, 54, 59, 1);
+    border: solid 1px white;
+}
+.contenedor-centro1{
+
+    display: flex;
+    justify-content: center;
+}
+.txt{
+color: white;
+
+}
+
+
+.conentendor-fichas{
+    display: grid;
+    grid-template-rows:  50% auto auto auto auto;
+
+
+}
+
+.imagen-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.f2{
+    text-align: center;
+    color: white;
+
+}
+.jj1{
+    display: flex;
+    justify-content: center;
+    
+}
+.hhh{
+    /* background-color: aliceblue; */
+    width: 80%;
+
+}
+.textos{
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+
+}
+
+.cuadrito1{ 
+    background-color: rgba(255, 255, 255, 0.18);
+    width: 100%;   
+    color: white;
+    font-size: 12px;
+
+}
+
+
