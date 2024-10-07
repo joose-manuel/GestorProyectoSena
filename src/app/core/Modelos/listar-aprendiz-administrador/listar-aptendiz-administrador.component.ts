@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RegistroAprendiz } from '../../Guards/aprendiz';
 import { ReguistroAprendizService } from '../../Servicios/reguistro-aprendiz.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listar-aptendiz-administrador',
@@ -10,7 +11,7 @@ import { ReguistroAprendizService } from '../../Servicios/reguistro-aprendiz.ser
 export class ListarAptendizAdministradorComponent {
   aprendiz:RegistroAprendiz[];
 
-  constructor(private aprendizServicio: ReguistroAprendizService){}
+  constructor(private aprendizServicio: ReguistroAprendizService, private enrutador: Router){}
   
   ngOnInit(): void {
 
@@ -25,6 +26,8 @@ export class ListarAptendizAdministradorComponent {
     );
 
   }
-
+  editarAprendiz(id: number){
+    this.enrutador.navigate(['editar-aprendiz',id]);
+  }
 
 }
