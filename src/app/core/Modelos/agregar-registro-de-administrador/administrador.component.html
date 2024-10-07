@@ -1,32 +1,87 @@
 <section class="conetnedor-principal" >
     <div class="conatiner-principal" >
-
         <div class="contenedor1">
             <div class="cuador_adentro">
-                <app-menu-coordinador></app-menu-coordinador> 
-                <!-- <app-lateral-izquierdo-aprendiz></app-lateral-izquierdo-aprendiz> -->
+                <app-menu-coordinador> </app-menu-coordinador> 
             </div>
         </div>
         <div class="contenedor2">
             <div class="contenedor-principal1">
-
                 <div class="Conetendor-Dentro">
-
                     <div class="contenedor-header">
-                        <p class="nombreNat"></p>
+                        <p class="nombreNat" data-aos="fade-left" >Registro de Administrador</p>
                     </div>
-
-                    <div class="contenedor-contenido" data-aos="fade-left">
-                        2
-
+                    <div class="contenedor-contenido">
+                        <form (ngSubmit)="onSubmit()" data-aos="fade-left">
+                            <div class="contendorformulario">
+                                <div>
+                                    <div class="texto-Entradas">
+                                        <p>Nombre:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Correo:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Género:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Edad:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Número de Documento:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Contraseña:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Estado:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Área a Administrar:</p>
+                                    </div>
+                                    <div class="texto-Entradas">
+                                        <p>Nivel de Acceso:</p>
+                                    </div>
+                                </div>
                         
+                                <div>
+                                    <div class="contendor-input">
+                                        <input type="text" class="leabe-nombre" id="nombre" name="nombre" [(ngModel)]="administrador.nombre">
+                                    </div>
+                                    <div class="contendor-input">
+                                        <input type="text" class="leabe-nombre" id="correo" name="correo" [(ngModel)]="administrador.correo">
+                                    </div>
+                                    <div class="contendor-input">
+                                        <input type="text" class="leabe-nombre" id="genero" name="genero" [(ngModel)]="administrador.genero">
+                                    </div>
+                                    <div class="contendor-input">
+                                        <input type="text" class="leabe-nombre" id="edad" name="edad" [(ngModel)]="administrador.edad">
+                                    </div>
+                                    <div class="contendor-input">
+                                        <input type="text" class="leabe-nombre" id="numeroDocumento" name="numeroDocumento" [(ngModel)]="administrador.numeroDocumento">
+                                    </div>
+                                    <div class="contendor-input">
+                                        <input type="text" class="leabe-nombre" id="contrasena" name="contrasena" [(ngModel)]="administrador.contrasena">
+                                    </div>
+                                    <br>
+                                    <div class="contendor-input">
+                                        <input type="text" class="leabe-nombre" id="estado" name="estado" [(ngModel)]="administrador.estado">
+                                    </div>
+                                    <div class="contendor-input">
+                                        <input type="text" class="leabe-nombre" id="areaAdministrar" name="areaAdministrar" [(ngModel)]="administrador.areaAdministrar">
+                                    </div>
+                                    <div class="contendor-input">
+                                        <input type="text" class="leabe-nombre" id="nivelAcceso" name="nivelAcceso" [(ngModel)]="administrador.nivelAcceso">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                        </form>
+                                        
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-<!-- 1046427777 -->
+<router-outlet></router-outlet>

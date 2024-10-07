@@ -24,7 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListarAptendizAdministradorComponent } from './core/Modelos/listar-aprendiz-administrador/listar-aptendiz-administrador.component';
 import { ListarInstructorAdministradorComponent } from './core/Modelos/listar-instructor-administrador/listar-instructor-administrador.component';
 import { ListarEvaluadorAdministradorComponent } from './core/Modelos/listar-evaluador-administrador/listar-evaluador-administrador.component';
-import { ListarAdministradorAComponent } from './core/Modelos/listar-administrador-a/listar-administrador-a.component';
+import { ListarAdministradorAComponent } from './core/Modelos/listar-administrador-administrador/listar-administrador-a.component';
 import { ProyectosFormativosInstructorComponent } from './core/Modelos/proyectos-formativos-instructor/proyectos-formativos-instructor.component';
 import { ProyectosSustentarEvaluadorComponent } from './core/Modelos/proyectos-sustentar-evaluador/proyectos-sustentar-evaluador.component';
 import { CalificarSustentacionesInstructorComponent } from './core/Modelos/calificar-sustentaciones-instructor/calificar-sustentaciones-instructor.component';
@@ -32,6 +32,7 @@ import { PdfEvaluadorComponent } from './core/Modelos/pdf-evaluador/pdf-evaluado
 import { InformacionProyectoAprendizComponent } from './core/Modelos/informacion-proyecto-aprendiz/informacion-proyecto-aprendiz.component';
 import { CentroInstructorComponent } from './core/Modelos/centro-instructor/centro-instructor.component';
 import { CentroEvaluadorComponent } from './core/Modelos/centro-evaluador/centro-evaluador.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -73,6 +74,7 @@ import { CentroEvaluadorComponent } from './core/Modelos/centro-evaluador/centro
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

@@ -4,7 +4,7 @@ export class Administrador {
     correo:string;
     genero:string;
     edad:number;
-    numeroDocuemnto:number;
+    numeroDocumento:number;
     contrasena:string;
     estado:string;
     areaAdministrar:string;

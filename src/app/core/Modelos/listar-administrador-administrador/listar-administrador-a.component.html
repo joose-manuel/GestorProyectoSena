@@ -9,7 +9,7 @@
             <div class="contenedor-principal1">
                 <div class="Conetendor-Dentro">
                     <div class="contenedor-header">
-                        <p class="nombreNat" data-aos="fade-left" >Ver instructor</p>
+                        <p class="nombreNat" data-aos="fade-left" >Ver administrador</p>
                     </div>
                     <div class="contenedor-contenido">
                         <table class="table" data-aos="fade-left">
@@ -23,28 +23,25 @@
                                 <th scope="col">Número de documento</th>
                                 <th scope="col">Contraseña</th>
                                 <th scope="col">Estado</th>
-                                <th scope="col">Especialidad</th>
-                                <th scope="col">Fecha de inicio del contrato</th>
-                                <th scope="col">Fecha final del contrato</th>
+                                <th scope="col">Área administrativa</th>
+                                <th scope="col">Nivel de acceso</th>
                               </tr>
                             </thead>
                             <tbody>
-                              <tr *ngFor="let instructor of instructor">
-                                <th scope="row">{{instructor.idInstructor}}</th>
-                                <td>{{instructor.nombre}}</td>
-                                <td>{{instructor.correo}}</td>
-                                <td>{{instructor.genero}}</td>
-                                <td>{{instructor.edad}}</td>
-                                <td>{{instructor.numeroDocuemnto}}</td>
-                                <td>{{instructor.contrasena}}</td>
-                                <td>{{instructor.estado}}</td>
-                                <td>{{instructor.especialidad}}</td>
-                                <td>{{instructor.fechaInicioContrato | date:'shortDate'}}</td>
-                                <td>{{instructor.fechaFinalContrato | date:'shortDate'}}</td>
+                              <tr *ngFor="let administrador of administrador">
+                                <th scope="row">{{administrador.idAdministrador}}</th>
+                                <td>{{administrador.nombre}}</td>
+                                <td>{{administrador.correo}}</td>
+                                <td>{{administrador.genero}}</td>
+                                <td>{{administrador.edad}}</td>
+                                <td>{{administrador.numeroDocumento}}</td>
+                                <td>{{administrador.contrasena}}</td>
+                                <td>{{administrador.estado}}</td>
+                                <td>{{administrador.areaAdministrar}}</td>
+                                <td>{{administrador.nivelAcceso}}</td>
                               </tr>
                             </tbody>
                           </table>
-                        
                     </div>
                 </div>
             </div>

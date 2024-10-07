@@ -29,5 +29,21 @@ export class ListarAptendizAdministradorComponent {
   editarAprendiz(id: number){
     this.enrutador.navigate(['editar-aprendiz',id]);
   }
+  irListaAprendiz() {
+    this.enrutador.navigate(['/aprendices']);
+  }
 
+
+  eliminarAprendiz(id:number){
+   
+    this.aprendizServicio.eliminarAprendiz(id).subscribe(
+      {
+        next:(datos) => this.irListaAprendiz(),
+        error:(errores) =>console.log(errores),
+        
+      }
+     
+      );
+      window.location.reload();
+  }
 }

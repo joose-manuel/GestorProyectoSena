@@ -10,22 +10,48 @@ import { Router } from '@angular/router';
 })
 export class RegitroDeAprendizComponent {
   aprendiz: RegistroAprendiz = new RegistroAprendiz();
-  constructor(private aprendizServicio:ReguistroAprendizService, private enrutador: Router){}
+  mensajeExito: string = '';
+  mensajeError: string = '';
 
-  onSubmit(){
+  constructor(private aprendizServicio: ReguistroAprendizService, private enrutador: Router) {}
+
+  onSubmit() {
     this.guardarAprendiz();
   }
-  guardarAprendiz(){
-    this.aprendizServicio.agregarAprendiz(this.aprendiz).subscribe(
-      {
-        next: (datos) =>{
+
+  guardarAprendiz() {
+    this.aprendizServicio.agregarAprendiz(this.aprendiz).subscribe({
+      next: (datos) => {
+        this.mensajeExito = 'Cargo correctamente'; 
+        this.mensajeError = '';
+        
+        // Redirigir después de mostrar el mensaje
+        setTimeout(() => {
           this.irListaAprendiz();
-        },
-        error: (error: any)=>{console.log(error)}
+        }, 2000); // Espera 2 segundos antes de redirigir
+      },
+      error: (error: any) => {
+        console.error("Error al guardar aprendiz:", error);
+        this.mensajeError = 'No se pudo guardar'; 
+        this.mensajeExito = ''; 
       }
-    )
+    });
   }
-  irListaAprendiz(){
+
+  irListaAprendiz() {
     this.enrutador.navigate(['/aprendices']);
   }
+
+  eliminarAprendiz(id:number){
+    this.aprendizServicio.eliminarAprendiz(id).subscribe(
+      {
+        next:(datos) => this.irListaAprendiz(),
+        error:(errores) =>console.log(errores)
+      }
+     
+      );
+
+  }
+
+
 }

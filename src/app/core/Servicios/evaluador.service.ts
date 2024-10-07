@@ -8,7 +8,7 @@ import { Evaluador } from '../Guards/evaluador.model';
 })
 export class EvaluadorService {
 
-  private urlBase = "http://localhost:8080/api-evaluador/evaluador";
+  private urlBase = "http://localhost:8080/api-evaluador/evauador";
 
 constructor(private clienteHttp: HttpClient) { }
 

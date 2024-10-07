@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./listar-evaluador-administrador.component.css']
 })
 export class ListarEvaluadorAdministradorComponent {
-  evaluador : Evaluador[];
+  evaluadoress : Evaluador[];
   constructor(private evaluadorServicio: EvaluadorService, private enrutador: Router){}
 
   ngOnInit(){
@@ -18,7 +18,7 @@ export class ListarEvaluadorAdministradorComponent {
   private obtenerEvaluador(){
     this.evaluadorServicio.obtenerEvaluadores().subscribe(
       (datos => {
-        this.evaluador = datos;
+        this.evaluadoress = datos;
       })
     )
   }

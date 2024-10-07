@@ -8,5 +8,5 @@ export class Evaluador {
     contrasena:string;
     estado:string;
     areaEvaluar:string;
-    nivelCertificacion: string;
+    nivelCertificaicon: string;
 }

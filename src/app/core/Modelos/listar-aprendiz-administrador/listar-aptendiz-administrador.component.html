@@ -23,6 +23,7 @@
                                 <th scope="col">Estado</th>
                                 <th scope="col">Numero Ficha</th>
                                 <th scope="col">Nombre de Ficha</th>
+                                <th scope="col">eliminar</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -35,7 +36,12 @@
                                 <td>{{aprendi.estado}}</td>
                                 <td>{{aprendi.numeroFicha}}</td>
                                 <td>{{aprendi.nombreFicha}}</td>
+                                <button (click)="eliminarAprendiz(aprendi.idAprendiz)" >
+                                    e
+                                </button>
                             </tbody>
+
+                            
                           </table>
                         
                     </div>

@@ -16,7 +16,7 @@ import { ListarAptendizAdministradorComponent } from './core/Modelos/listar-apre
 import { ProyectosFormativosInstructorComponent } from './core/Modelos/proyectos-formativos-instructor/proyectos-formativos-instructor.component';
 import { ListarEvaluadorAdministradorComponent } from './core/Modelos/listar-evaluador-administrador/listar-evaluador-administrador.component';
 import { ListarInstructorAdministradorComponent } from './core/Modelos/listar-instructor-administrador/listar-instructor-administrador.component';
-import { ListarAdministradorAComponent } from './core/Modelos/listar-administrador-a/listar-administrador-a.component';
+import { ListarAdministradorAComponent } from './core/Modelos/listar-administrador-administrador/listar-administrador-a.component';
 
 
 
@@ -38,9 +38,10 @@ const routes: Routes = [
   {path:'mostrar-instructor', component:ListarInstructorAdministradorComponent},
   {path:'mostrar-administrador', component:ListarAdministradorAComponent},
   {path:'proyecto-formativo-instructor',component:ProyectosFormativosInstructorComponent},
+  {path:'reguistrar-administradro',component:AdministradorComponent},
   
   {path:'',redirectTo:'/admin', pathMatch:"full"},
-  {path:'**', redirectTo:'/admin'}
+  // {path:'**', redirectTo:'/admin'}
  
 
 ];

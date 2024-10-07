@@ -14,30 +14,31 @@
                     <div class="contenedor-contenido">
                         <table class="table " data-aos="fade-left" >
                             <thead>
-                              <tr class="table-secondary">
-                                <th scope="col ">ID </th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Correo</th>
-                                <th scope="col">Genero</th>
-                                <th scope="col">Edad</th>
-                                <th scope="col">Numero de documento </th>
-                                <th scope="col">Contraseña </th>
-                                <th scope="col">Estado </th>
-                                <th scope="col">Area evaluar </th>
-                                <th scope="col">Nivel certificacion</th>
-                              </tr>
+                                <tr class="table-secondary">
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Correo</th>
+                                    <th scope="col">Género</th>
+                                    <th scope="col">Edad</th>
+                                    <th scope="col">Número de documento</th>
+                                    <th scope="col">Contraseña</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Área a evaluar</th>
+                                    <th scope="col">Nivel de certificación</th>
+                                  </tr>
                             </thead>
-                            <!-- <tbody>
-                              <tr *ngFor="let aprendi of aprendiz">
-                                <th scope="row">{{aprendi.idAprendiz}}</th>
-                                <td>{{aprendi.nombre}}</td>
-                                <td>{{aprendi.correo}}</td>
-                                <td>{{aprendi.numeroDocuemnto}}</td>
-                                <td>{{aprendi.contrasena}}</td>
-                                <td>{{aprendi.estado}}</td>
-                                <td>{{aprendi.numeroFicha}}</td>
-                                <td>{{aprendi.nombreFicha}}</td>
-                            </tbody> -->
+                            <tbody>
+                                <tr *ngFor="let evaluador of evaluadoress">
+                                  <th scope="row">{{ evaluador.idEvaluador }}</th>
+                                  <td>{{ evaluador.correo }}</td>
+                                  <td>{{ evaluador.numeroDocuemnto }}</td>
+                                  <td>{{ evaluador.contrasena }}</td>
+                                  <td>{{ evaluador.estado }}</td>
+                                  <td>{{ evaluador.areaEvaluar }}</td>
+                                  <td>{{ evaluador.nivelCertificaicon }}</td>
+                                </tr>
+                              </tbody>
+                              
                           </table>
                         
                     </div>
