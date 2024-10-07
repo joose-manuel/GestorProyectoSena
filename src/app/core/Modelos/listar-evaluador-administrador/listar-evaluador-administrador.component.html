@@ -30,8 +30,12 @@
                             <tbody>
                                 <tr *ngFor="let evaluador of evaluadoress">
                                   <th scope="row">{{ evaluador.idEvaluador }}</th>
+                                  <th scope="row">{{ evaluador.nombre }}</th>
                                   <td>{{ evaluador.correo }}</td>
+                                  <th scope="row">{{ evaluador.genero}}</th>
+                                  <th scope="row">{{ evaluador.edad }}</th>
                                   <td>{{ evaluador.numeroDocuemnto }}</td>
+                                 
                                   <td>{{ evaluador.contrasena }}</td>
                                   <td>{{ evaluador.estado }}</td>
                                   <td>{{ evaluador.areaEvaluar }}</td>
