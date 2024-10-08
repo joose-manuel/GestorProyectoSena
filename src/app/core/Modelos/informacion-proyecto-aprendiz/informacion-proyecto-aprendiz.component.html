@@ -6,7 +6,7 @@
             <div></div>
             <div>
                 <div class="cuadro-blanco">
-                    <form action="" >
+                    <form (ngSubmit)="onSubmit()" >
                         
                         <div class="contendorformulario">
                             <div>
@@ -28,13 +28,13 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="contendor-input"><input type="text" class="leabe-nombre"></div>
+                                <div class="contendor-input"><input type="text" class="leabe-nombre" [(ngModel)]="equipo.nombreProyecto"   ></div>
                                 <div class="contendor-input"></div>
-                                <div class="contendor-input"><input type="text" class="leabe-nombre"></div>
-                                <div class="contendor-input"><input type="text" class="leabe-nombre"></div>
-                                <div class="contendor-input"><input type="text" class="leabe-nombre"></div>
-                                <div class="contendor-input"><input type="text" class="leabe-nombre1"></div>
-                                 
+                                <div class="contendor-input"><input type="text" class="leabe-nombre" [(ngModel)]="equipo.nombreSoftware"   ></div>
+                                <div class="contendor-input"><input type="text" class="leabe-nombre"  [(ngModel)]="equipo.integrantes"  ></div>
+                                <div class="contendor-input"><input type="text" class="leabe-nombre"  [(ngModel)]="equipo.lema"  ></div>
+                                <div class="contendor-input"><input type="text" class="leabe-nombre1" [(ngModel)]="equipo.descripcion"   ></div>
+                                <!-- type="date" class="leabe-nombre" id="fechaFinalContrato" name="fechaFinalContrato"  -->
                             </div>
                             <div class="contendor-imagenes">
                                 <div class="conetenedor-Foto">

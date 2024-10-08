@@ -22,11 +22,16 @@ export class LoginComponent {
     if (this.usuario === usuarioValido && this.contrasena === contrasenaValida) {
       this.enrutador.navigate(['/registro-de-aprendiz']); // Redirigir a la ruta de administrador
     } else if ((this.usuario === 'Jose' && this.contrasena === 'a1234') || (this.usuario === 'aprendiz' && this.contrasena === 'aprendiz')    ) {
-      this.enrutador.navigate(['/centro-instructor']); // Redirigir a la ruta de aprendiz
+      this.enrutador.navigate(['/centro-ayuda-aprendiz']); // Redirigir a la ruta de aprendiz
     } else if (this.usuario === 'evaluador' && this.contrasena === 'evaluador') {
       this.enrutador.navigate(['/centro-evaluador']); // Redirigir a la ruta de evaluador
-    } else {
+    } else if (this.usuario === 'instructor' && this.contrasena === 'instructor') {
+      this.enrutador.navigate(['/centro-instructor']); // Redirigir a la ruta de evaluador
+    } 
+    else {
       this.error = 'Usuario o contraseña incorrectos';
     }
   }
 }
+
+

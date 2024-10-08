@@ -39,8 +39,9 @@
     min-height: 700px;
     /* height: 815px; */
 
-
-}
+        z-index: 1;
+        position: absolute;
+    }
 
 .panel-principal div{
     /* border: solid; */

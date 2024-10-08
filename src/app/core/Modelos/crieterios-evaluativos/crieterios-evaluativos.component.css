@@ -33,6 +33,18 @@
 
   }
 
+  .imges11{
+
+    width: 20%;
+    height: 20%;
+  }
+  .contenedor-tarjer{
+    display: flex;
+    justify-content: center;
+
+
+
+  }
   .contendo_tableros{
     display: grid;
     grid-template-columns: auto auto auto auto ;
