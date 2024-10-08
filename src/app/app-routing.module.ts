@@ -17,6 +17,8 @@ import { ProyectosFormativosInstructorComponent } from './core/Modelos/proyectos
 import { ListarEvaluadorAdministradorComponent } from './core/Modelos/listar-evaluador-administrador/listar-evaluador-administrador.component';
 import { ListarInstructorAdministradorComponent } from './core/Modelos/listar-instructor-administrador/listar-instructor-administrador.component';
 import { ListarAdministradorAComponent } from './core/Modelos/listar-administrador-administrador/listar-administrador-a.component';
+import { CentroEvaluadorComponent } from './core/Modelos/centro-evaluador/centro-evaluador.component';
+import { CentroInstructorComponent } from './core/Modelos/centro-instructor/centro-instructor.component';
 
 
 
@@ -32,7 +34,11 @@ const routes: Routes = [
   {path:'evaluador', component:EvaluadorComponent},
   {path:'crear-reportes', component:CrearReportesComponent},
   {path:'centroDeAyuda', component:AyudaComponent},
+  // Aqui va los cetros
   {path:'centro-ayuda-aprendiz', component:CentroAprendizComponent},
+  {path:'centro-evaluador', component:CentroEvaluadorComponent},
+  {path:'centro-instructor', component:CentroInstructorComponent},
+  //Cierre centros
   {path:'mostrar-aprendiz', component:ListarAptendizAdministradorComponent},
   {path:'mostrar-evaluador', component:ListarEvaluadorAdministradorComponent},
   {path:'mostrar-instructor', component:ListarInstructorAdministradorComponent},

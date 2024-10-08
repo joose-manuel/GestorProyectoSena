@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Sesion } from '../../Guards/sesion.model';
-import { SesionService } from '../../Servicios/sesion.service';
 
 @Component({
   selector: 'app-login',
@@ -9,41 +7,26 @@ import { SesionService } from '../../Servicios/sesion.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  sesion: Sesion = new Sesion();
-  sesiones: Sesion[];
+  usuario: string = '';
+  contrasena: string = '';
+  error: string = '';
 
-  constructor(private sesionServicio: SesionService, private enrutador: Router) {}
-
-  ngOnInit() {
-    this.obtenerSesiones();
-  }
+  constructor(private enrutador: Router) {}
 
   onSubmit() {
-    this.guardarSesion();
-  }
+    // Datos de login predeterminados
+    const usuarioValido = 'admin';
+    const contrasenaValida = 'admin';
 
-  private guardarSesion() {
-    this.sesionServicio.agregarSesion(this.sesion).subscribe({
-      next: (datos) => {
-        this.irListaSesiones();
-      },
-      error: (error: any) => {
-        console.log(error);
-      }
-    });
-  }
-
-  private obtenerSesiones() {
-    this.sesionServicio.obtenerSesiones().subscribe((datos) => {
-      this.sesiones = datos;
-    });
-  }
-
-  editarSesion(id: number) {
-    this.enrutador.navigate(['editar-sesion', id]);
-  }
-
-  irListaSesiones() {
-    this.enrutador.navigate(['/sesiones']);
+    // Validar credenciales
+    if (this.usuario === usuarioValido && this.contrasena === contrasenaValida) {
+      this.enrutador.navigate(['/registro-de-aprendiz']); // Redirigir a la ruta de administrador
+    } else if ((this.usuario === 'Jose' && this.contrasena === 'a1234') || (this.usuario === 'aprendiz' && this.contrasena === 'aprendiz')    ) {
+      this.enrutador.navigate(['/centro-instructor']); // Redirigir a la ruta de aprendiz
+    } else if (this.usuario === 'evaluador' && this.contrasena === 'evaluador') {
+      this.enrutador.navigate(['/centro-evaluador']); // Redirigir a la ruta de evaluador
+    } else {
+      this.error = 'Usuario o contraseña incorrectos';
+    }
   }
 }
