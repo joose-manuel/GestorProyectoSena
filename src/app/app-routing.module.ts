@@ -5,7 +5,7 @@ import { AdministradorComponent } from './core/Modelos/agregar-registro-de-admin
 import { SustentacionesComponent } from './core/Componentes/sustentaciones/sustentaciones.component';
 import { RegitroDeAprendizComponent } from './core/Modelos/agregar-regitro-de-aprendiz/regitro-de-aprendiz.component';
 import { InstructorComponent } from './core/Modelos/agregar-registro-de-instructor/instructor.component';
-import { EvaluadorComponent } from './core/Modelos/agregar-registro-de-administrador/agregar-registro-de-evaluador/evaluador.component';
+
 import { CrearReportesComponent } from './core/Componentes/crear-reportes/crear-reportes.component';
 import { ModuloPrinciaplComponent } from './core/Modelos/modulo-princiapl/modulo-princiapl.component';
 import { CrieteriosEvaluativosComponent } from './core/Modelos/crieterios-evaluativos/crieterios-evaluativos.component';
@@ -22,6 +22,7 @@ import { CentroInstructorComponent } from './core/Modelos/centro-instructor/cent
 import { InformacionProyectoAprendizComponent } from './core/Modelos/informacion-proyecto-aprendiz/informacion-proyecto-aprendiz.component';
 import { PdfEvaluadorComponent } from './core/Modelos/pdf-evaluador/pdf-evaluador.component';
 import { ProyectosSustentarEvaluadorComponent } from './core/Modelos/proyectos-sustentar-evaluador/proyectos-sustentar-evaluador.component';
+import { EvaluadorComponent } from './core/Modelos/agregar-registro-de-evaluador/evaluador.component';
 
 
 

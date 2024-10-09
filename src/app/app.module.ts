@@ -33,6 +33,7 @@ import { InformacionProyectoAprendizComponent } from './core/Modelos/informacion
 import { CentroInstructorComponent } from './core/Modelos/centro-instructor/centro-instructor.component';
 import { CentroEvaluadorComponent } from './core/Modelos/centro-evaluador/centro-evaluador.component';
 import { FormsModule } from '@angular/forms';
+import { RegistroFichaComponent } from './core/Modelos/registro-ficha/registro-ficha.component';
 
 
 
@@ -67,6 +68,7 @@ import { FormsModule } from '@angular/forms';
     InformacionProyectoAprendizComponent,
     CentroInstructorComponent,
     CentroEvaluadorComponent,
+    RegistroFichaComponent,
     
 
   ],
