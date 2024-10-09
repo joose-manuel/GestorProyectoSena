@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { Equipo } from '../../Guards/equipo.model';
-import { EquipoService } from '../../Servicios/equipo.service';
+import { Component } from "@angular/core";
+import { Router } from "@angular/router";
+import { Equipo } from "../../Guards/equipo.model";
+import { EquipoService } from "../../Servicios/equipo.service";
+
 
 @Component({
   selector: 'app-listar-proyectos-evaluador-equipo',

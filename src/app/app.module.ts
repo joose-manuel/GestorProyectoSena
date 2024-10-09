@@ -11,7 +11,7 @@ import { RegitroDeAprendizComponent } from './core/Modelos/agregar-regitro-de-ap
 import { LateralIzquierdoAprendizComponent } from './core/Componentes/lateral-izquierdo-aprendiz/lateral-izquierdo-aprendiz.component';
 import { InstructorComponent } from './core/Modelos/agregar-registro-de-instructor/instructor.component';
 
-import { CrearReportesComponent } from './core/Componentes/crear-reportes/crear-reportes.component';
+import { CrearReportesComponent } from './core/Modelos/crear-reportes/crear-reportes.component';
 import { ModuloPrinciaplComponent } from './core/Modelos/modulo-princiapl/modulo-princiapl.component';
 import { CrieteriosEvaluativosComponent } from './core/Modelos/crieterios-evaluativos/crieterios-evaluativos.component';
 import { NavComponent } from './core/Componentes/nav/nav.component';
@@ -36,6 +36,8 @@ import { FormsModule } from '@angular/forms';
 import { RegistroFichaComponent } from './core/Modelos/registro-ficha/registro-ficha.component';
 import { EvaluadorComponent } from './core/Modelos/agregar-registro-de-evaluador/evaluador.component';
 import { ListarProyectosEvaluadorEquipoComponent } from './core/Modelos/listar-proyectos-evaluador-equipo/listar-proyectos-evaluador-equipo.component';
+import { ReguistrarFichasComponent } from './core/Modelos/reguistrar-fichas/reguistrar-fichas.component';
+import { ListaReportesComponent } from './core/Modelos/lista-reportes/lista-reportes.component';
 
 
 
@@ -72,6 +74,8 @@ import { ListarProyectosEvaluadorEquipoComponent } from './core/Modelos/listar-p
     CentroEvaluadorComponent,
     RegistroFichaComponent,
     ListarProyectosEvaluadorEquipoComponent,
+    ReguistrarFichasComponent,
+    ListaReportesComponent,
     
 
   ],

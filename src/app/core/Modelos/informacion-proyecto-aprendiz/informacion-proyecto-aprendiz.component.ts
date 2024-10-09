@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Equipo } from '../../Guards/equipo.model';
 import { EquipoService } from '../../Servicios/equipo.service';
@@ -8,7 +8,7 @@ import { EquipoService } from '../../Servicios/equipo.service';
   templateUrl: './informacion-proyecto-aprendiz.component.html',
   styleUrls: ['./informacion-proyecto-aprendiz.component.css']
 })
-export class InformacionProyectoAprendizComponent {
+export class InformacionProyectoAprendizComponent implements OnInit {
   equipo: Equipo = new Equipo();
   equipos: Equipo[];
 
@@ -25,10 +25,11 @@ export class InformacionProyectoAprendizComponent {
   private guardarEquipo() {
     this.equipoServicio.agregarEquipo(this.equipo).subscribe({
       next: (datos) => {
-        this.irListaEquipos();
+        console.log('Equipo guardado exitosamente', datos);
+        this.refrescarFormulario();
       },
       error: (error: any) => {
-        console.log(error);
+        console.error('Error al guardar el equipo', error);
       }
     });
   }
@@ -45,5 +46,20 @@ export class InformacionProyectoAprendizComponent {
 
   irListaEquipos() {
     this.enrutador.navigate(['/equipos']);
+  }
+
+  refrescarFormulario() {
+    // Reiniciar los valores del objeto equipo
+    this.equipo = new Equipo();
+    
+    // Opcional: Mostrar un mensaje de éxito
+    alert('Formulario enviado con éxito. Los campos han sido reiniciados.');
+    
+    // Opcional: Si estás usando formularios reactivos, puedes resetear el formulario así:
+    // this.formulario.reset();
+  }
+
+  limpiarFormulario() {
+    this.refrescarFormulario();
   }
 }

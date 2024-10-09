@@ -2,6 +2,6 @@ export class Ficha {
     idFicha: number;
     numeroFicha: number;
     nombreFicha: string;
-    fechaInicio: Date;
+    fechaIncio: Date;
     fechaFinal: Date;
 }

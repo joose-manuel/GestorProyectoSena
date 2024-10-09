@@ -27,9 +27,6 @@
 
 
 
-
-
-
 .panel-principal{
 
     display: grid;
@@ -408,3 +405,20 @@ color: white;
 }
 
 
+
+.carta11 {
+    width: 300px; /* Ancho inicial */
+    height: auto; /* Altura automática */
+    border: solid 1px white;
+    border-radius: 10px;
+    background-color: rgba(42, 54, 59, 1);
+    display: flex;
+    flex-direction: column; /* Organiza el contenido verticalmente */
+    padding: 10px; /* Espacio interno */
+    transition: all 0.3s ease; /* Agrega una transición suave para los cambios */
+}
+
+.carta-reducida {
+    width: 200px; /* Ancho reducido */
+    height: 90%; /* Altura fija o ajustada */
+}

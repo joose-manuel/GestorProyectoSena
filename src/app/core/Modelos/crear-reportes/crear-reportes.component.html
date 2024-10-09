@@ -10,45 +10,34 @@
             <div class="contenedor-principal1">
                 <div class="Conetendor-Dentro">
                     <div class="contenedor-header">
-                        <p class="nombreNat" data-aos="fade-left" >Registro Fichas</p>
+                        <p class="nombreNat" data-aos="fade-left" >Registro reportes </p>
                     </div>
                     <div class="contenedor-contenido">
-                        <form (ngSubmit)="onSubmit()" data-aos="fade-left">
+                        <form  (ngSubmit)="agregarReporte()" data-aos="fade-left">
                             <div class="contendorformulario">
                                 <div>
                                     <div class="texto-entradas">
-                                        <p>Numero De ficha:</p>
+                                        <p>Titulo del reporte:</p>
                                     </div>
                                     <div class="texto-entradas">
-                                        <p>Nombre De ficha:</p>
+                                        <p>Descripcion del reporte:</p>
                                     </div>
                                     <br>
-                                    <div class="texto-entradas">
-                                        <p>Fecha Inicio:</p>
-                                    </div>
-                                    <div class="texto-entradas">
-                                        <p>Fecha fin:</p>
-                                    </div>
+                                  
                                 </div>
                         
                                 <div>
         
                                     <div>
                                         <div class="contenedor-input">
-                                            <input type="text" class="leabe-nombre" id="numeroFicha" name="numeroFicha" [(ngModel)]="ficha.numeroFicha" required>
+                                            <input type="text" class="leabe-nombre" id="required" name="required" [(ngModel)]=" nuevoReporte.titulo" required>
                                         </div>
                                         <br>
                                         <div class="contenedor-input">
-                                            <input type="email" class="leabe-nombre" id="nombreFicha" name="nombreFicha" [(ngModel)]="ficha.nombreFicha" required>
+                                            <input type="text" class="leabe-nombre" id="descripcion" name="descripcion" [(ngModel)]="nuevoReporte.descripcion" required>
                                         </div>
                                         <br>
-                                        <div class="contenedor-input">
-                                            <input type="date"  class="leabe-nombre" id="fechaIncio" name="fechaIncio"  [(ngModel)]="ficha.fechaIncio" required>
-                                        </div>
-                                        <br>
-                                        <div class="contenedor-input">
-                                            <input type="date" class="leabe-nombre" id="fechaFinal" name="fechaFinal" [(ngModel)]="ficha.fechaFinal" required>
-                                        </div>
+                                            
                                     </div>
                                 </div>
                                 </div>

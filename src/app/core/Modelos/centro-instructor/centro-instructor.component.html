@@ -1,6 +1,7 @@
+
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
-<app-nav></app-nav>
+
 
 <div class="panel-principal">
     <div>
@@ -184,8 +185,10 @@
                 <div class="contenedor-texto">
                     <p class="datos1">Datos importantes</p>
                 </div>
+                
                 <div class="contenido-car-1">
                     <!-- Aqui va el for para cargar el proyecto -->
+                    
                     <div class="carta-1-1">
                         <div>
                             <p class="titulo-proyecto">
@@ -238,48 +241,35 @@
             </div>
             <div class="contenedores-card3-f">
                 <!-- Aqui va el for -->
-                <div class="contenedores-card3">
 
-                    <div class="contenedor-texto">
-                        <!-- <p class="datos1">Ficha asignada</p> -->
-                    </div>
-
-                    <div class="contenedores-card3-f" >
-                        <div class="carta11" >
-                            <div class="contenedor-centro1">
-                                <div class="conentendor-fichas">
-                                    <div class="imagen-logo">
-                                        <img src="assets/kisspng-logo-brand-line-5af66c2d1dfee7 2.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="txt">
-                                            Nombre Proyecto
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p class="txt">
-                                            Ficha:123sssssssss
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p class="txt">
-                                            Aprendices
-                                        </p>
-                                    </div>
-                                    <div>
-
-                                        <a routerLink="/criterios">
-                                            <button class="btn1">
-                                                Ingresar Aqui
-                                            </button>
-                                        </a>
-
-                                    </div>
+                 
+                <div class="contenedores-card3-f">
+                    <div 
+                        class="carta11" 
+                        [ngClass]="{'carta-reducida': fichas.length > 5}" 
+                        *ngFor="let ficha of fichas">
+                        <div class="contenedor-centro1">
+                            <div class="contenedor-fichas">
+                                <div class="imagen-logo">
+                                    <img src="assets/kisspng-logo-brand-line-5af66c2d1dfee7 2.png" alt="Logo del Proyecto">
+                                </div>
+                                <div>
+                                    <p class="txt">Nombre Proyecto: {{ ficha.nombreFicha }}</p>
+                                </div>
+                                <div>
+                                    <p class="txt">Número de Ficha: {{ ficha.numeroFicha }}</p>
+                                </div>
+                                <div>
+                                    <p class="txt">Estado: {{ ficha.idFicha }}</p>
+                                </div>
+                                <div>
+                                    <a routerLink="/criterios">
+                                        <button class="btn1">Ingresar Aquí</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 
             </div>
