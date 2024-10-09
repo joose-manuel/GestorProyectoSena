@@ -10,7 +10,7 @@ import { SustentacionesComponent } from './core/Componentes/sustentaciones/suste
 import { RegitroDeAprendizComponent } from './core/Modelos/agregar-regitro-de-aprendiz/regitro-de-aprendiz.component';
 import { LateralIzquierdoAprendizComponent } from './core/Componentes/lateral-izquierdo-aprendiz/lateral-izquierdo-aprendiz.component';
 import { InstructorComponent } from './core/Modelos/agregar-registro-de-instructor/instructor.component';
-import { EvaluadorComponent } from './core/Modelos/agregar-registro-de-administrador/agregar-registro-de-evaluador/evaluador.component';
+
 import { CrearReportesComponent } from './core/Componentes/crear-reportes/crear-reportes.component';
 import { ModuloPrinciaplComponent } from './core/Modelos/modulo-princiapl/modulo-princiapl.component';
 import { CrieteriosEvaluativosComponent } from './core/Modelos/crieterios-evaluativos/crieterios-evaluativos.component';
@@ -34,6 +34,7 @@ import { CentroInstructorComponent } from './core/Modelos/centro-instructor/cent
 import { CentroEvaluadorComponent } from './core/Modelos/centro-evaluador/centro-evaluador.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroFichaComponent } from './core/Modelos/registro-ficha/registro-ficha.component';
+import { EvaluadorComponent } from './core/Modelos/agregar-registro-de-evaluador/evaluador.component';
 
 
 

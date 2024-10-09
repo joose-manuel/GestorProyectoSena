@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { Evaluador } from '../../../Guards/evaluador.model';
-import { EvaluadorService } from '../../../Servicios/evaluador.service';
+
 import { Router } from '@angular/router';
+import { Evaluador } from '../../Guards/evaluador.model';
+import { EvaluadorService } from '../../Servicios/evaluador.service';
 
 @Component({
   selector: 'app-evaluador',
