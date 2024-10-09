@@ -28,12 +28,13 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="contendor-input"><input type="text" class="leabe-nombre" [(ngModel)]="equipo.nombreProyecto"   ></div>
+                                <div class="contendor-input"><input type="text" class="leabe-nombre" id="nombreProyecto" name="nombreProyecto"   [(ngModel)]="equipo.nombreProyecto"   ></div>
                                 <div class="contendor-input"></div>
-                                <div class="contendor-input"><input type="text" class="leabe-nombre" [(ngModel)]="equipo.nombreSoftware"   ></div>
-                                <div class="contendor-input"><input type="text" class="leabe-nombre"  [(ngModel)]="equipo.integrantes"  ></div>
-                                <div class="contendor-input"><input type="text" class="leabe-nombre"  [(ngModel)]="equipo.lema"  ></div>
-                                <div class="contendor-input"><input type="text" class="leabe-nombre1" [(ngModel)]="equipo.descripcion"   ></div>
+                                <div class="contendor-input"><input type="text" class="leabe-nombre" id="nombreSoftware" name="nombreSoftware"  [(ngModel)]="equipo.nombreSoftware"   ></div>
+                                <div class="contendor-input"><input type="text" class="leabe-nombre" id="integrantes" name="integrantes"   [(ngModel)]="equipo.integrantes"  ></div>
+                                <div class="contendor-input"><input type="text" class="leabe-nombre" id="lema" name="lema"  [(ngModel)]="equipo.lema"  ></div>
+                                <br>
+                                <div class="contendor-input"><input type="text" class="leabe-nombre1" id="descripcion" name="descripcion"  [(ngModel)]="equipo.descripcion"   ></div>
                                 <!-- type="date" class="leabe-nombre" id="fechaFinalContrato" name="fechaFinalContrato"  -->
                             </div>
                             <div class="contendor-imagenes">
@@ -43,27 +44,31 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="container3">
+                            <div><div class="boton">
+                                <button class="btn-enviar">
+                                    Limpiar
+                                </button>
+                            </div></div>
+                            <div><div class="boton">
+                                <button class="btn-enviar">
+                                    Enviar
+                                </button>
+                            </div></div>
+                            <div><div class="boton">
+                                <a routerLink="/">
+                                    <button class="btn-enviar">
+                                        Salir
+                                    </button>
+                                </a>
+                              
+                            </div></div>
+                        </div>
                     </form>                    
                 </div>
             </div>
             <div></div>
         </div>
-        <div class="container3">
-            <div><div class="boton">
-                <button class="btn-enviar">
-                    Limpiar
-                </button>
-            </div></div>
-            <div><div class="boton">
-                <button class="btn-enviar">
-                    Enviar
-                </button>
-            </div></div>
-            <div><div class="boton">
-                <button class="btn-enviar">
-                    Salir
-                </button>
-            </div></div>
-        </div>
+        
     </div>
 </div>

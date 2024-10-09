@@ -23,6 +23,7 @@ import { InformacionProyectoAprendizComponent } from './core/Modelos/informacion
 import { PdfEvaluadorComponent } from './core/Modelos/pdf-evaluador/pdf-evaluador.component';
 import { ProyectosSustentarEvaluadorComponent } from './core/Modelos/proyectos-sustentar-evaluador/proyectos-sustentar-evaluador.component';
 import { EvaluadorComponent } from './core/Modelos/agregar-registro-de-evaluador/evaluador.component';
+import { ListarProyectosEvaluadorEquipoComponent } from './core/Modelos/listar-proyectos-evaluador-equipo/listar-proyectos-evaluador-equipo.component';
 
 
 
@@ -52,6 +53,8 @@ const routes: Routes = [
   {path:'reguistrar-administradro',component:AdministradorComponent},
   {path:'pdf',component:PdfEvaluadorComponent},
   {path:'evaluador1',component:ProyectosSustentarEvaluadorComponent},
+  {path:'listar-equipos',component:ListarProyectosEvaluadorEquipoComponent},
+
   {path:'',redirectTo:'/admin', pathMatch:"full"},
   // {path:'**', redirectTo:'/admin'}
  

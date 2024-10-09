@@ -1,0 +1,60 @@
+
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<app-nav></app-nav>
+
+
+<div class="contenedor1">
+    <div><app-barra-lateral-desplegable-flotante></app-barra-lateral-desplegable-flotante></div>
+    <div>
+        <div class="estilo1"><P>Proyectos a sustentar</P></div>
+        <div class="contenedor2">
+            <div class="contenedor3">
+                <div class="estilos2">Nombre del Proyecto</div>
+                <div class="estilos2">Categoria</div>
+                <div class="estilos2">Integrantes</div>
+            </div>
+
+            <table class="table" data-aos="fade-left">
+                <tr>
+                    <th scope="col">Nombre</th>
+                </tr>
+                <tbody>
+                    <tr class="contenedor5" >
+                        <th >{{equipo.nombreProyecto}}</th>
+                        <th>{{equipo.nombreSoftware}}</th>
+                        <th>{{equipo.integrantes}}</th>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+            <!-- Tabala que cree en boostrap -->
+            <table class="table" data-aos="fade-left">
+                <thead>
+                  <tr class="table-secondary">
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let equipo of equipos">
+                    <th >{{equipo.nombreProyecto}}</th>
+                        <th>{{equipo.nombreSoftware}}</th>
+                        <th>{{equipo.integrantes}}</th>
+                  </tr>
+                </tbody>
+              </table>
+            <!-- Fin tabla  -->
+         
+
+     
+          
+        </div>
+    </div>
+    <div></div>
+</div>
+
+

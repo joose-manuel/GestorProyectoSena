@@ -35,6 +35,7 @@ import { CentroEvaluadorComponent } from './core/Modelos/centro-evaluador/centro
 import { FormsModule } from '@angular/forms';
 import { RegistroFichaComponent } from './core/Modelos/registro-ficha/registro-ficha.component';
 import { EvaluadorComponent } from './core/Modelos/agregar-registro-de-evaluador/evaluador.component';
+import { ListarProyectosEvaluadorEquipoComponent } from './core/Modelos/listar-proyectos-evaluador-equipo/listar-proyectos-evaluador-equipo.component';
 
 
 
@@ -70,6 +71,7 @@ import { EvaluadorComponent } from './core/Modelos/agregar-registro-de-evaluador
     CentroInstructorComponent,
     CentroEvaluadorComponent,
     RegistroFichaComponent,
+    ListarProyectosEvaluadorEquipoComponent,
     
 
   ],

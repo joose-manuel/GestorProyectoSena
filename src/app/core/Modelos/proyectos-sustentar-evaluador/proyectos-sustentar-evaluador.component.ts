@@ -9,41 +9,50 @@ import { CalificarProyectoService } from '../../Servicios/calificar-proyecto.ser
   styleUrls: ['./proyectos-sustentar-evaluador.component.css']
 })
 export class ProyectosSustentarEvaluadorComponent {
-  calificarProyecto: CalificarProyecto = new CalificarProyecto();
-  calificacionesProyecto: CalificarProyecto[];
 
-  constructor(private calificarProyectoServicio: CalificarProyectoService, private enrutador: Router) {}
+  
 
-  ngOnInit() {
-    this.obtenerCalificacionesProyecto();
-  }
 
-  onSubmit() {
-    this.guardarCalificacionProyecto();
-  }
 
-  private guardarCalificacionProyecto() {
-    this.calificarProyectoServicio.agregarCalificacionProyecto(this.calificarProyecto).subscribe({
-      next: (datos) => {
-        this.irListaCalificacionesProyecto();
-      },
-      error: (error: any) => {
-        console.log(error);
-      }
-    });
-  }
+  // calificarProyecto: CalificarProyecto = new CalificarProyecto();
+  // calificacionesProyecto: CalificarProyecto[];
 
-  private obtenerCalificacionesProyecto() {
-    this.calificarProyectoServicio.obtenerCalificacionesProyecto().subscribe((datos) => {
-      this.calificacionesProyecto = datos;
-    });
-  }
+  // constructor(private calificarProyectoServicio: CalificarProyectoService, private enrutador: Router) {}
 
-  editarCalificacionProyecto(id: number) {
-    this.enrutador.navigate(['editar-calificacion-proyecto', id]);
-  }
+  // ngOnInit() {
+  //   this.obtenerCalificacionesProyecto();
+  // }
 
-  irListaCalificacionesProyecto() {
-    this.enrutador.navigate(['/calificaciones-proyecto']);
-  }
+  // onSubmit() {
+  //   this.guardarCalificacionProyecto();
+  // }
+
+  // private guardarCalificacionProyecto() {
+  //   this.calificarProyectoServicio.agregarCalificacionProyecto(this.calificarProyecto).subscribe({
+  //     next: (datos) => {
+  //       this.irListaCalificacionesProyecto();
+  //     },
+  //     error: (error: any) => {
+  //       console.log(error);
+  //     }
+  //   });
+  // }
+
+  // private obtenerCalificacionesProyecto() {
+  //   this.calificarProyectoServicio.obtenerCalificacionesProyecto().subscribe((datos) => {
+  //     this.calificacionesProyecto = datos;
+  //   });
+  // }
+
+  // editarCalificacionProyecto(id: number) {
+  //   this.enrutador.navigate(['editar-calificacion-proyecto', id]);
+  // }
+
+  // irListaCalificacionesProyecto() {
+  //   this.enrutador.navigate(['/calificaciones-proyecto']);
+  // }
+
+  
+
+
 }
