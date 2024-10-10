@@ -38,6 +38,8 @@ import { EvaluadorComponent } from './core/Modelos/agregar-registro-de-evaluador
 import { ListarProyectosEvaluadorEquipoComponent } from './core/Modelos/listar-proyectos-evaluador-equipo/listar-proyectos-evaluador-equipo.component';
 import { ReguistrarFichasComponent } from './core/Modelos/reguistrar-fichas/reguistrar-fichas.component';
 import { ListaReportesComponent } from './core/Modelos/lista-reportes/lista-reportes.component';
+import { VentanaEmergenteSustentacionComponent } from './core/Modelos/ventana-emergente-sustentacion/ventana-emergente-sustentacion.component';
+import { CricteriosInstructorComponent } from './core/Modelos/cricterios-instructor/cricterios-instructor.component';
 
 
 
@@ -76,6 +78,8 @@ import { ListaReportesComponent } from './core/Modelos/lista-reportes/lista-repo
     ListarProyectosEvaluadorEquipoComponent,
     ReguistrarFichasComponent,
     ListaReportesComponent,
+    VentanaEmergenteSustentacionComponent,
+    CricteriosInstructorComponent,
     
 
   ],

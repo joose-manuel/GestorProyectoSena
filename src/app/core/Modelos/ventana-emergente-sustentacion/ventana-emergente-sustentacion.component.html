@@ -1,0 +1,28 @@
+<div class="popup" *ngIf="isVisible">
+    <div class="popup-content">
+      <h3>Editar</h3>
+      <form>
+        <div class="form-group">
+          <label for="projectName">Fecha Inicio</label>
+          <input type="text" id="projectName" name="projectName">
+        </div>
+        <div class="form-group">
+          <label for="studentName">Fecha Fin</label>
+          <input type="text" id="studentName" name="studentName">
+        </div>
+        <div class="form-group">
+            <label for="studentName">Nombre</label>
+            <input type="text" id="studentName" name="studentName">
+          </div>
+          <div class="form-group">
+            <label for="studentName">Calificacion</label>
+            <input type="number" id="studentName" name="studentName">
+          </div>
+          <div class="form-group">
+            <label for="studentName">Descripcion</label>
+            <input type="text" id="studentName" name="studentName">
+          </div>
+        <button type="button" (click)="closePopup()">Enviar</button>
+      </form>
+    </div>
+  </div>

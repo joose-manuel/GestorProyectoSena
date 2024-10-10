@@ -26,6 +26,7 @@ import { EvaluadorComponent } from './core/Modelos/agregar-registro-de-evaluador
 import { ListarProyectosEvaluadorEquipoComponent } from './core/Modelos/listar-proyectos-evaluador-equipo/listar-proyectos-evaluador-equipo.component';
 import { RegistroFichaComponent } from './core/Modelos/registro-ficha/registro-ficha.component';
 import { ListaReportesComponent } from './core/Modelos/lista-reportes/lista-reportes.component';
+import { CalificarSustentacionesInstructorComponent } from './core/Modelos/calificar-sustentaciones-instructor/calificar-sustentaciones-instructor.component';
 
 
 
@@ -58,6 +59,8 @@ const routes: Routes = [
   {path:'listar-equipos',component:ListarProyectosEvaluadorEquipoComponent},
   {path:'agragar-ficha',component:RegistroFichaComponent},
   {path:'listar-reportes',component:ListaReportesComponent},
+  {path:'proyectos-formativos-instructor',component:ProyectosFormativosInstructorComponent},
+  {path:'Calificar-sustentacion-evaluador',component:ProyectosSustentarEvaluadorComponent},
 
 
   {path:'',redirectTo:'/admin', pathMatch:"full"},
