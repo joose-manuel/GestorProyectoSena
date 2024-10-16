@@ -40,6 +40,7 @@ import { ReguistrarFichasComponent } from './core/Modelos/reguistrar-fichas/regu
 import { ListaReportesComponent } from './core/Modelos/lista-reportes/lista-reportes.component';
 import { VentanaEmergenteSustentacionComponent } from './core/Modelos/ventana-emergente-sustentacion/ventana-emergente-sustentacion.component';
 import { CricteriosInstructorComponent } from './core/Modelos/cricterios-instructor/cricterios-instructor.component';
+import { VentanaEmergenteEditarInstructorComponent } from './core/Modelos/ventana-emergente-editar-instructor/ventana-emergente-editar-instructor.component';
 
 
 
@@ -80,6 +81,7 @@ import { CricteriosInstructorComponent } from './core/Modelos/cricterios-instruc
     ListaReportesComponent,
     VentanaEmergenteSustentacionComponent,
     CricteriosInstructorComponent,
+    VentanaEmergenteEditarInstructorComponent,
     
 
   ],

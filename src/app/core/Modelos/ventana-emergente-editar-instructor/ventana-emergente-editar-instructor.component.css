@@ -1,0 +1,70 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .popup {
+    background-color: #2A363B;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #3A464B;
+  }
+  .popup-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .popup-content {
+    padding: 20px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #3A464B;
+    border-radius: 4px;
+    background-color: #3A464B;
+    color: white;
+  }
+  .submit-btn {
+    background-color: #1CC923;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  .submit-btn:hover {
+    background-color: #16A31B;
+  }

@@ -1,0 +1,33 @@
+<div class="overlay" *ngIf="isVisible" (click)="closePopup()">
+    <div class="popup" (click)="$event.stopPropagation()">
+      <div class="popup-header">
+        <h3>Editar</h3>
+        <button class="close-btn" (click)="closePopup()">×</button>
+      </div>
+      <div class="popup-content">
+        <form>
+          <div class="form-group">
+            <label for="startDate">Fecha Inicio:</label>
+            <input type="date" id="startDate" name="startDate">
+          </div>
+          <div class="form-group">
+            <label for="endDate">Fecha Fin:</label>
+            <input type="date" id="endDate" name="endDate">
+          </div>
+          <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="grade">Calificación:</label>
+            <input type="number" id="grade" name="grade">
+          </div>
+          <div class="form-group">
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+          </div>
+          <button type="button" class="submit-btn" (click)="closePopup()">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
